@@ -13,11 +13,6 @@ const React = (function () {
 
   const reactRenderer = debounseFrame(() => {
     if (!root || !components) return;
-    console.log(root);
-    // if (root.childNodes) {
-    //   root.insertAdjacentHTML('beforeend', components());
-    // } else {
-    // }
     root.innerHTML = components();
     stateKey = 0;
     if (injectedEvent.event) {

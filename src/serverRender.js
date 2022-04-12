@@ -9,7 +9,8 @@ function serverRender(component) {
         <title>Document</title>
       </head>
       <body>
-        <main id="app">${component ? component : ''}</main>
+        <div>${component ? component : ''}</div>
+        <div id="app"></div>
         <script src="./src/index.js" type="module"></script>
       </body>
     </html>

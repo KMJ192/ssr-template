@@ -1,4 +1,4 @@
-import { useState, useDocument } from './custom_modules/react/React.js';
+import { useState, useDocument } from './react/React.js';
 
 function Counter() {
   const [count, setCount] = useState(0);
