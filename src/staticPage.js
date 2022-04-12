@@ -1,6 +1,6 @@
 function staticPage() {
   return `
-    <div>static</div>
+    <div>Server side rendering contents</div>
   `;
 }
 
