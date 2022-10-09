@@ -5,6 +5,8 @@ import staticPage from './src/staticPage.js';
 const app = express();
 const port = 3000;
 
+app.use('/src', express.static('./src'));
+
 app.get('/', (req, res) => {
   res.send(serverRender(staticPage()));
 });
